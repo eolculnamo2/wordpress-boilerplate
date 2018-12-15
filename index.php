@@ -18,4 +18,5 @@
     ?>
 <?php get_footer() ?>
 </body>
+<script src="<?php echo get_bloginfo('template_directory'); ?>/build/js/script.js"></script>
 </html>
