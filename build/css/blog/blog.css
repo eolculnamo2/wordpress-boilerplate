@@ -1,2 +1,16 @@
-h1 {
-  color: green; }
+.blog-wrap {
+  max-width: 700px;
+  margin: auto; }
+
+.blog-title {
+  text-align: center; }
+
+.blog-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
+  .blog-layout img {
+    width: 100%; }
+
+.right-menu {
+  border: 2px solid #333; }

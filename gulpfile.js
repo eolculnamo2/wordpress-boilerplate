@@ -26,7 +26,7 @@ const reload = done => {
 browserSync.init({proxy: 'http://192.168.64.2/wordpress/'})
 
 gulp.task('transpileSass', () => {
-    return gulp.src([config.scssIn, "!"+config.styleScssIn])
+    return gulp.src(["!"+config.styleScssIn,config.scssIn])
     .pipe(sass())
     .pipe(gulp.dest(config.scssOut));
 });
@@ -45,8 +45,8 @@ const webpackTask = () => {
                .pipe(webpackStream(webpackConfig, webpack, webpackHandler))
                .pipe(gulp.dest(config.jsOut))
                .on('data', () => { 
-                    gulp.watch(config.scssIn, {interval: 1000}, gulp.series('transpileSass', reload))
-                    gulp.watch('./**/*.php', {interval: 1000}, gulp.series('transpileSass', reload))
+                    gulp.watch(config.scssIn, {interval: 1000}, gulp.series('transpileStyleSass','transpileSass', reload))
+                    gulp.watch('./**/*.php', {interval: 1000}, gulp.series(reload))
                 });
 };
 
