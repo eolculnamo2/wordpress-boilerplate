@@ -1,0 +1,52 @@
+@import './settings';
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    color: #333;
+    min-height: 90vh; //To keep footer down
+    font-family: $font1; //default font;
+    font-size: 16px; //default size & rem value(Will set for media queries)
+    background: #fafafa;
+    line-height: 1.4;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+header {
+    position: sticky;
+    background: #333;
+    color: white;
+    min-height: 4em;
+    top: 0;
+    left: 0;
+    padding: 1em 4em;
+
+    h1 {
+        margin-top: 0;
+    }
+
+    a {
+        color: white;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+footer {
+    min-height: 10vh;
+    background: steelblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

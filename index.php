@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link href="<?php echo get_bloginfo('template_directory'); ?>/style.css" rel="stylesheet">
-    <link href="<?php echo get_bloginfo('template_directory'); ?>/build/css/blog/blog.css" rel="stylesheet">
+    <link href="<?php echo get_bloginfo('template_directory'); ?>/build/css/entries/blog/blog.css" rel="stylesheet">
 </head>
 <body>
 <?php get_header(); ?>

@@ -30,13 +30,6 @@ header {
     header a:hover {
       text-decoration: underline; }
 
-.site-main-title {
-  margin: 0; }
-
-.blog-description {
-  margin-top: .2em;
-  margin-bottom: 0; }
-
 footer {
   min-height: 10vh;
   background: steelblue;
@@ -45,47 +38,96 @@ footer {
   justify-content: center;
   align-items: center; }
 
-.layout {
+.no-pad {
+  padding: 0; }
+
+.pad-1 {
+  padding: 1em; }
+
+.pad-2 {
+  padding: 2em; }
+
+.pad-noMar-1 {
+  padding: 1em;
+  margin: 0; }
+
+.pad-noMar-2 {
+  padding: 2em;
+  margin: 0; }
+
+.no-mar, .site-main-title-obj, .site-main-title {
+  margin: 0; }
+
+.mar-1 {
+  margin: 1em; }
+
+.mar-2 {
+  margin: 2em; }
+
+.mar-noPad-1 {
+  margin: 1em;
+  padding: 0; }
+
+.mar-noPad-2 {
+  margin: 2em;
+  padding: 0; }
+
+.flex-apart, .header-flex-obj, .header-flex {
+  display: flex;
+  justify-content: space-between; }
+
+.flex-center, .wp-block-cover-obj, .wp-block-cover {
+  display: flex;
+  justify-content: center; }
+
+.image-full {
+  width: 100%; }
+
+.blog-description-obj, .blog-description {
+  margin-top: .2em;
+  margin-bottom: 0; }
+
+.layout-obj, .layout {
   margin: auto;
   max-width: 1200px; }
 
-.content-wrap {
+.content-wrap-obj, .content-wrap {
   margin-top: 2em;
   margin-bottom: 2em; }
 
-.wp-block-cover {
-  display: flex;
+.wp-block-cover-obj, .wp-block-cover {
   align-items: center;
-  justify-content: center;
-  border-radius: 3px;
   background-position: center;
   background-size: cover;
-  border: 2px solid #dadada;
-  font-size: 3em; }
+  font-size: 3em;
+  border-radius: 3px; }
 
-.wp-block-cover-text {
-  color: white;
+.wp-block-cover-text-obj, .wp-block-cover-text {
   text-align: center; }
 
-.wp-block-cover {
+.wp-block-cover-obj, .wp-block-cover {
+  align-items: center;
   position: relative;
-  background-color: #000;
   background-size: cover;
   background-position: center center;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden; }
 
-.header-flex {
-  display: flex;
-  justify-content: space-between;
+.header-flex-obj, .header-flex {
   align-items: center; }
-  .header-flex ul {
+  .header-flex-obj ul, .header-flex ul {
     list-style-type: none; }
 
-.menu {
+.menu-obj, .menu {
   display: flex;
   justify-content: space-between;
   min-width: 35vw; }
+
+.wp-block-cover {
+  border: 2px solid #dadada; }
+
+.wp-block-cover-text {
+  color: white; }
+
+.wp-block-cover {
+  background-color: #000; }

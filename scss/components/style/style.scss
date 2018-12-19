@@ -1,0 +1,40 @@
+@import '../../objects/style/style-object';
+
+.site-main-title {
+    @extend .site-main-title-obj;
+}
+
+.blog-description {
+    @extend .blog-description-obj;
+}
+
+.layout {
+    @extend .layout-obj;
+}
+
+.content-wrap {
+    @extend .content-wrap-obj;
+}
+
+.wp-block-cover {
+    @extend .wp-block-cover-obj;
+    border: 2px solid #dadada;
+}
+
+.wp-block-cover-text {
+    @extend .wp-block-cover-text-obj;
+    color: white;
+}
+
+.wp-block-cover {
+    @extend .wp-block-cover-obj;
+    background-color: #000;
+}
+
+.header-flex {
+    @extend .header-flex-obj;
+}
+
+.menu {
+    @extend .menu-obj;
+}

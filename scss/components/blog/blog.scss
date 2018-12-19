@@ -1,0 +1,35 @@
+@import '../../objects/blog/blog-object';
+
+.blog-title {
+    @extend .blog-title-object;
+    background: $blue-color1;
+    color: $white-color1;
+    border: 2px solid $dark-color1;
+}
+
+.blog-layout {
+    @extend .blog-layout-object;
+    color: $dark-color2;
+
+    img {
+        border: 2px solid $gray-color1;
+    }
+    a {
+        color: $blue-color1;
+    }
+}
+
+.right-menu {
+    @extend .right-menu-object;
+    border: 2px solid $dark-color1;
+    position: sticky;
+
+   .menu-title {
+       @extend .menu-title-object;
+       border-bottom: 1px solid $blue-color1;
+   }
+
+   .menu-link {
+       @extend .menu-link-object;
+   }
+}

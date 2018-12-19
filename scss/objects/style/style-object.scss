@@ -1,0 +1,58 @@
+@import '../../globals/global';
+
+.site-main-title-obj {
+    @extend .no-mar;
+}
+
+.blog-description-obj {
+    margin-top: .2em;
+    margin-bottom: 0;
+}
+
+.layout-obj {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.content-wrap-obj {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.wp-block-cover-obj {
+    @extend .flex-center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    font-size: 3em;
+    border-radius: 3px;
+}
+
+.wp-block-cover-text-obj {
+    text-align: center;
+}
+
+.wp-block-cover-obj {
+    @extend .flex-center;
+    align-items: center;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.header-flex-obj {
+    @extend .flex-apart;
+    align-items: center;
+
+    ul {
+        list-style-type: none;
+    }
+}
+
+.menu-obj {
+    display: flex;
+    justify-content: space-between;
+    min-width:35vw;
+}

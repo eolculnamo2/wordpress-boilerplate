@@ -1,37 +1,31 @@
-@import '../globals/global';
+@import '../../globals/global';
 
-.hero-cover {
+.hero-cover-object {
+    @extend .image-full;
     min-height: 65vh;
-    width: 100%;
-    border: 4px solid #dadada;
 
     &--small{
         min-height: 45vh;
     }
 }
-.home-card-wrap-wrapper {
+
+.home-card-wrapper-object {
     padding: 0 1em;
-
-    h2 {
-        font-size: 2em;
-        text-align: center;
-        text-decoration: underline;
-        color: black;
-    }
-}
-.home-card-wrap {
-    display: flex;
-    justify-content: space-between;
+    font-size: 2em;
+    text-align: center;
+    text-decoration: underline;
 }
 
-.home-card-inner {
-    background: white;
+.home-card-wrap-obj {
+    @extend .flex-apart;
+}
+
+.home-card-inner-object {
     padding: 1em;
     margin: 1em 0;
-    border: 1px solid black;
 }
 
-.home-card {
+.home-card-object {
     height: 200px;
     width: 300px;
     margin: 1em 0;
@@ -41,8 +35,6 @@
     cursor: pointer;
 
     &:hover {
-        border: 2px solid #000;
-        box-shadow: .5em .5em #dadada;
         font-weight: 600;
     }
 
@@ -59,36 +51,30 @@
     }
 }
 
-.home-text-box {
-    h2 {
-        font-size: 2em;
-        text-decoration: underline;
-        color: black;
-        margin-bottom: 1em;
-    }
-    background: #fafafa;
+.home-text-box-obj {
     padding: 1em 0;
     font-weight: 500;
     text-align: center;
+    h2 {
+        margin-bottom: 1em;
+        font-size: 2em;
+        text-decoration: underline;
+    }
 }
 
-.home-text-inner {
-    background: white;
-    padding: 2em 5em;;
-    border: 1px solid black;
+.home-text-inner-obj {
+    padding: 2em 5em;
 }
 
-.heading-title {
+.heading-title-obj {
     margin: 0;
     margin-bottom: 1em;
     padding: 1em 0;
     text-align: center;
-    font-size: 2em;
-    background-color: steelblue;
-    color: white;
+    font-size: 2em; 
 }
 
-.article-card {
+.article-card-obj {
     z-index: 2;
     cursor: pointer;
 
@@ -96,7 +82,6 @@
         font-weight: 600;
         height: 200px;
     }
-
     &::before {
         content: "";
         position: absolute;

@@ -1,0 +1,156 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+  color: #333;
+  min-height: 90vh;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 16px;
+  background: #fafafa;
+  line-height: 1.4; }
+
+p {
+  font-size: 1.1em; }
+
+a {
+  color: inherit;
+  text-decoration: inherit; }
+
+header {
+  position: sticky;
+  background: #333;
+  color: white;
+  min-height: 4em;
+  top: 0;
+  left: 0;
+  padding: 1em 4em; }
+  header h1 {
+    margin-top: 0; }
+  header a {
+    color: white; }
+    header a:hover {
+      text-decoration: underline; }
+
+footer {
+  min-height: 10vh;
+  background: steelblue;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.no-pad {
+  padding: 0; }
+
+.pad-1 {
+  padding: 1em; }
+
+.pad-2 {
+  padding: 2em; }
+
+.pad-noMar-1 {
+  padding: 1em;
+  margin: 0; }
+
+.pad-noMar-2 {
+  padding: 2em;
+  margin: 0; }
+
+.no-mar {
+  margin: 0; }
+
+.mar-1 {
+  margin: 1em; }
+
+.mar-2 {
+  margin: 2em; }
+
+.mar-noPad-1 {
+  margin: 1em;
+  padding: 0; }
+
+.mar-noPad-2 {
+  margin: 2em;
+  padding: 0; }
+
+.flex-apart, .home-card-wrap-obj {
+  display: flex;
+  justify-content: space-between; }
+
+.flex-center {
+  display: flex;
+  justify-content: center; }
+
+.image-full, .hero-cover-object {
+  width: 100%; }
+
+.hero-cover-object {
+  min-height: 65vh; }
+  .hero-cover-object--small {
+    min-height: 45vh; }
+
+.home-card-wrapper-object {
+  padding: 0 1em;
+  font-size: 2em;
+  text-align: center;
+  text-decoration: underline; }
+
+.home-card-inner-object {
+  padding: 1em;
+  margin: 1em 0; }
+
+.home-card-object {
+  height: 200px;
+  width: 300px;
+  margin: 1em 0;
+  border-radius: 5px;
+  font-size: 1.5em;
+  z-index: 2;
+  cursor: pointer; }
+  .home-card-object:hover {
+    font-weight: 600; }
+  .home-card-object::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: inherit;
+    opacity: .4;
+    z-index: -1; }
+
+.home-text-box-obj {
+  padding: 1em 0;
+  font-weight: 500;
+  text-align: center; }
+  .home-text-box-obj h2 {
+    margin-bottom: 1em;
+    font-size: 2em;
+    text-decoration: underline; }
+
+.home-text-inner-obj {
+  padding: 2em 5em; }
+
+.heading-title-obj {
+  margin: 0;
+  margin-bottom: 1em;
+  padding: 1em 0;
+  text-align: center;
+  font-size: 2em; }
+
+.article-card-obj {
+  z-index: 2;
+  cursor: pointer; }
+  .article-card-obj:hover {
+    font-weight: 600;
+    height: 200px; }
+  .article-card-obj::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: inherit;
+    opacity: .4;
+    z-index: -1; }

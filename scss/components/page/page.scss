@@ -1,0 +1,57 @@
+
+@import '../../objects/page/page-object';
+
+.hero-cover {
+    @extend .hero-cover-object;
+    border: 4px solid $gray-color1;
+}
+.home-card-wrap-wrapper {
+    @extend .home-card-wrapper-object;
+
+    h2 {
+        color: $dark-color2;
+    }
+}
+
+.home-card-wrap {
+    @extend .home-card-wrap-obj;
+}
+
+.home-card-inner {
+    @extend .home-card-inner-object;
+    background: $white-color1;
+    border: 1px solid $dark-color2;
+}
+
+.home-card {
+    @extend .home-card-object;
+
+    &:hover {
+        border: 2px solid $dark-color2;
+        box-shadow: .5em .5em $gray-color1;
+    }
+}
+
+.home-text-box {
+    @extend .home-text-box-obj;
+    background: $white-color2;
+    h2 {
+        color: $dark-color2;
+    }
+}
+
+.home-text-inner {
+    @extend .home-text-inner-obj;
+    background: $white-color1;
+    border: 1px solid $dark-color2;
+}
+
+.heading-title {
+    @extend .heading-title-obj;
+    background-color: $blue-color1;
+    color: $white-color1;
+}
+
+.article-card {
+    @extend .article-card-obj;
+}

@@ -1,0 +1,55 @@
+@import '../../globals/global';
+
+.blog-wrap {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.blog-title-object {
+    @extend .pad-noMar-1;
+    text-align: center;
+}
+
+.blog-layout-object {
+    @extend .flex-apart;
+    align-items: flex-start;
+    line-height: 1.5;
+
+    img {
+        @extend .image-full;
+    }
+
+    a {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.left-side {
+    width: 350px;
+}
+
+.right-menu-object {
+    min-width: 200px;
+    padding: .5em;
+    top: 120px;
+    position: sticky;
+    margin: 1em .25em 0 .5em;
+
+    img {
+        width: 195px;
+    }
+}
+
+.menu-title-object {
+    padding-bottom: 1em;
+    margin-bottom: 0;
+    margin-top:.5em;
+}
+
+.menu-link-object {
+    font-size: 1em;
+    margin-top: .5em;
+    margin-bottom: 0;   
+}
