@@ -2,7 +2,7 @@
     <div class="layout">
         <div class="header-flex">
             <div>
-                <h1><a href="<?php echo get_bloginfo( 'wpurl' );?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
+                <h1 class="site-main-title"><a href="<?php echo get_bloginfo( 'wpurl' );?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
                 <p class="blog-description"><?php echo get_bloginfo( 'description' ); ?></p>
             </div>
             <div>
