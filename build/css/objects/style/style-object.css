@@ -4,15 +4,18 @@ body {
   color: #333;
   min-height: 90vh;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   background: #fafafa;
   line-height: 1.4; }
+  @media (min-width: 800px) {
+    body {
+      font-size: 16px; } }
 
 p {
   font-size: 1.1em; }
 
 a {
-  color: inherit;
+  color: steelblue;
   text-decoration: inherit; }
 
 header {
@@ -22,7 +25,11 @@ header {
   min-height: 4em;
   top: 0;
   left: 0;
-  padding: 1em 4em; }
+  padding: 1em;
+  z-index: 5; }
+  @media (min-width: 800px) {
+    header {
+      padding: 1em 4em; } }
   header h1 {
     margin-top: 0; }
   header a {
@@ -41,7 +48,7 @@ footer {
 .no-pad {
   padding: 0; }
 
-.pad-1 {
+.pad-1, .layout-obj {
   padding: 1em; }
 
 .pad-2 {
@@ -89,7 +96,10 @@ footer {
 
 .layout-obj {
   margin: auto;
-  max-width: 1200px; }
+  max-width: 100%; }
+  @media (min-width: 800px) {
+    .layout-obj {
+      max-width: 1200px; } }
 
 .content-wrap-obj {
   margin-top: 2em;

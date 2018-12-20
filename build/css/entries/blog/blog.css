@@ -4,15 +4,18 @@ body {
   color: #333;
   min-height: 90vh;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   background: #fafafa;
   line-height: 1.4; }
+  @media (min-width: 800px) {
+    body {
+      font-size: 16px; } }
 
 p {
   font-size: 1.1em; }
 
 a {
-  color: inherit;
+  color: steelblue;
   text-decoration: inherit; }
 
 header {
@@ -22,7 +25,11 @@ header {
   min-height: 4em;
   top: 0;
   left: 0;
-  padding: 1em 4em; }
+  padding: 1em;
+  z-index: 5; }
+  @media (min-width: 800px) {
+    header {
+      padding: 1em 4em; } }
   header h1 {
     margin-top: 0; }
   header a {
@@ -41,7 +48,7 @@ footer {
 .no-pad {
   padding: 0; }
 
-.pad-1 {
+.pad-1, .blog-wrap {
   padding: 1em; }
 
 .pad-2 {
@@ -84,29 +91,43 @@ footer {
   width: 100%; }
 
 .blog-wrap {
-  max-width: 1300px;
   margin: auto; }
+  @media (min-width: 800px) {
+    .blog-wrap {
+      max-width: 1300px; } }
 
 .blog-title-object, .blog-title {
   text-align: center; }
 
 .blog-layout-object, .blog-layout {
   align-items: flex-start;
+  flex-direction: column;
   line-height: 1.5; }
+  @media (min-width: 800px) {
+    .blog-layout-object, .blog-layout {
+      flex-direction: row; } }
   .blog-layout-object a:hover, .blog-layout a:hover {
     text-decoration: underline; }
 
 .left-side {
-  width: 350px; }
+  width: 300px; }
 
 .right-menu-object, .right-menu {
-  min-width: 200px;
+  min-width: 90%;
   padding: .5em;
   top: 120px;
   position: sticky;
-  margin: 1em .25em 0 .5em; }
+  margin: 0em .25em 0 .5em; }
   .right-menu-object img, .right-menu img {
-    width: 195px; }
+    display: block;
+    margin: auto;
+    width: 90%; }
+  @media (min-width: 800px) {
+    .right-menu-object, .right-menu {
+      min-width: 200px;
+      margin: 1em .25em 0 .5em; }
+      .right-menu-object img, .right-menu img {
+        width: 195px; } }
 
 .menu-title-object, .right-menu .menu-title {
   padding-bottom: 1em;

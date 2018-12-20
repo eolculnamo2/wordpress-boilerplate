@@ -1,8 +1,12 @@
 @import '../../globals/global';
 
 .blog-wrap {
-    max-width: 1300px;
+    @extend .pad-1;
     margin: auto;
+
+    @media(min-width: $bp-med) {
+        max-width: 1300px;
+    }
 }
 
 .blog-title-object {
@@ -13,7 +17,12 @@
 .blog-layout-object {
     @extend .flex-apart;
     align-items: flex-start;
+    flex-direction: column;
     line-height: 1.5;
+
+    @media(min-width: $bp-med) {
+        flex-direction: row;
+    }
 
     img {
         @extend .image-full;
@@ -27,19 +36,31 @@
 }
 
 .left-side {
-    width: 350px;
+    width: 300px;
 }
 
 .right-menu-object {
-    min-width: 200px;
+    min-width: 90%;
     padding: .5em;
     top: 120px;
     position: sticky;
-    margin: 1em .25em 0 .5em;
+    margin: 0em .25em 0 .5em;
 
     img {
-        width: 195px;
+        display: block;
+        margin: auto;
+        width: 90%;
     }
+
+    @media(min-width: $bp-med) {
+        min-width: 200px;
+        margin: 1em .25em 0 .5em;
+
+        img {
+            width: 195px;
+        }
+    }
+
 }
 
 .menu-title-object {

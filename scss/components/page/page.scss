@@ -3,7 +3,11 @@
 
 .hero-cover {
     @extend .hero-cover-object;
-    border: 4px solid $gray-color1;
+    border: 1px solid $gray-color1;
+
+    @media(min-width: $bp-med) {
+        border: 4px solid $gray-color1;
+    }
 }
 .home-card-wrap-wrapper {
     @extend .home-card-wrapper-object;

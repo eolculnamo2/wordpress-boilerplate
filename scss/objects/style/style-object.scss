@@ -10,8 +10,12 @@
 }
 
 .layout-obj {
+    @extend .pad-1;
     margin: auto;
-    max-width: 1200px;
+    max-width: 100%;
+    @media(min-width: $bp-med) {
+        max-width: 1200px;
+    }
 }
 
 .content-wrap-obj {
